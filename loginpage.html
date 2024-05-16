@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      .container {
+        border-radius: 50px;
+        background-color: #fff;
+        display: flex;
+        max-width: 480px;
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+      }
+      .header {
+        border-radius: 50%;
+        border: 3px solid rgba(248, 249, 255, 1);
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 60px 46px;
+      }
+      .title-wrapper {
+        border-radius: 50%;
+        background-color: #f8f9ff;
+        display: flex;
+        width: 100%;
+        max-width: 314px;
+        flex-direction: column;
+        align-items: start;
+        padding: 70px 80px 70px 0;
+      }
+      .title {
+        color: #1f41bb;
+        margin: 26px 0 0 14px;
+        font: 700 30px Poppins, sans-serif;
+      }
+      .subtitle {
+        color: #000;
+        margin-top: 36px;
+        font: 600 20px Poppins, sans-serif;
+      }
+      .form-container {
+        z-index: 10;
+        display: flex;
+        margin-top: -23px;
+        width: 100%;
+        align-items: flex-start;
+        gap: 0px;
+      }
+      .left-divider {
+        border: 2px solid rgba(241, 244, 255, 1);
+        align-self: end;
+        margin-top: 332px;
+        width: 66px;
+        height: 292px;
+      }
+      .form {
+        -self: start;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis: 0;
+        width: fit-content;
+        padding: 0 20px;
+      }
+      .input-label {
+        align-items: start;
+        border-radius: 10px;
+        border: 2px solid rgba(31, 65, 187, 1);
+        background-color: #f1f4ff;
+        color: #626262;
+        white-space: nowrap;
+        text-align: center;
+        justify-content: center;
+        padding: 20px;
+        font: 500 16px Poppins, sans-serif;
+      }
+      .input-password {
+        align-items: start;
+        border-radius: 10px;
+        background-color: #f1f4ff;
+        margin-top: 29px;
+        color: #626262;
+        white-space: nowrap;
+        text-align: center;
+        justify-content: center;
+        padding: 20px;
+        font: 500 16px Poppins, sans-serif;
+      }
+      .forgot-password {
+        color: #1f41bb;
+        text-align: center;
+        align-self: end;
+        margin-top: 30px;
+        font: 600 14px Poppins, sans-serif;
+      }
+      .sign-in {
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0px 10px 20px 0px #cbd6ff;
+        background-color: #1f41bb;
+        margin-top: 30px;
+        color: #fff;
+        text-align: center;
+        padding: 15px 20px;
+        font: 600 20px Poppins, sans-serif;
+      }
+      .create-account {
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: #fff;
+        margin-top: 30px;
+        color: #494949;
+        text-align: center;
+        padding: 10px 20px;
+        font: 600 14px Poppins, sans-serif;
+      }
+      .continue-with {
+        color: #1f41bb;
+        text-align: center;
+        align-self: center;
+        margin-top: 65px;
+        font: 600 14px Poppins, sans-serif;
+      }
+      .social-icons {
+        justify-content: end;
+        align-self: center;
+        display: flex;
+        margin-top: 20px;
+        padding-right: 22px;
+        gap: 10px;
+      }
+      .icon {
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: #ececec;
+        display: flex;
+        padding: 10px 20px;
+      }
+      .img {
+        aspect-ratio: 1;
+        object-fit: auto;
+        object-position: center;
+        width: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="title-wrapper">
+          <h1 class="title">Login here</h1>
+          <p class="subtitle">
+            Welcome back you’ve<br />
+            been missed!
+          </p>
+        </div>
+      </header>
+      <div class="form-container">
+        <div class="left-divider"></div>
+        <form class="form">
+          <label for="email" class="sr-only">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="input-label"
+            placeholder="Email"
+            aria-label="Email"
+          />
+          <label for="password" class="sr-only">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="input-password"
+            placeholder="Password"
+            aria-label="Password"
+          />
+          <a href="#" class="forgot-password">Forgot your password?</a>
+          <button type="submit" class="sign-in">Sign in</button>
+          <button type="button" class="create-account">
+            Create new account
+          </button>
+          <p class="continue-with">Or continue with</p>
+          <div class="social-icons">
+            <div class="icon">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/33ee79561b9c2401b003304fc4fd292a5d35c2b5c36ffb53647f7fe4de72999f?apiKey=d196885c07a44952a5996a4adbb255a9&"
+                alt="Facebook icon"
+                class="img"
+              />
+            </div>
+            <div class="icon">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/86d20e42dc106b10fd0b2192ce69cc8630ed7d89178fbff45146e89f9abc888f?apiKey=d196885c07a44952a5996a4adbb255a9&"
+                alt="Twitter icon"
+                class="img"
+              />
+            </div>
+            <div class="icon">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/297c6a42ab1e2cc1252a5208950cef7b6c483aae7bbebac1953f32221e09657a?apiKey=d196885c07a44952a5996a4adbb255a9&"
+                alt="Google icon"
+                class="img"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
